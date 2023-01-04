@@ -1,8 +1,9 @@
-//insert your apikey
+//insert your apikey you will get it from creating a project in google cloud console
 let apiKey = "AIzaSyAZUD-OQzz07s9uS5A7RiMG6ZXJS_bhafY";
 // let apiKey = "AIzaSyDWVDfRBVvGopDitxk2xz5H4nUpiE4p4mY"; //quota exceeded for today
 //insert your channelId
-let yourChannelId = "UCnZIDPHsiOdSHeqXIqZGZNw";
+let yourChannelId = "UCnZIDPHsiOdSHeqXIqZGZNw"; //get if from youtube channel urk
+//rest code generated from youtube data api website
 fetch(
   `https://www.googleapis.com/youtube/v3/search?key=${apiKey}&channelId=${yourChannelId}&part=snippet,id&order=date&maxResults=20`
 )
